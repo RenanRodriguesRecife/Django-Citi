@@ -1,0 +1,7 @@
+<ul>
+	{% for course in all_course %}
+
+		<li><a href ="{% url 'catalog:detail' course.id %}">{{course.name}}</a></li>
+		
+	{% endfor %}
+</ul>
